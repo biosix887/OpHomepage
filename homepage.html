@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hitman 47 - Homepage</title>
+    <link rel="stylesheet" type="text/css" href="homepageStyle.css">
+</head>
+<body onload="updateTime()">
+    <div class="navbar">
+        <div class="nav-items">
+            <a href="#home">Home</a>
+            <a href="#AI">AI</a>
+            <a href="#MPC">MPC</a>
+            <a href="#OSINT">OSINT</a>
+        </div>
+        <div class="timer" id="timer"></div>
+    </div>
+    <div class="container">
+        <div class="logo">
+            <img src="https://pbs.twimg.com/media/E_SB5lyX0AMXmBn.jpg:large"  alt="Hitman Logo">
+        </div>
+        <div class="search-box">
+            <div class="search-inputs">
+                <input type="text" id="search" placeholder="Digite sua pesquisa...">
+            </div>
+            <div>
+                <select id="searchEngine">
+                    <option value="https://www.google.com/search?q=">Google</option>
+                    <option value="https://www.bing.com/search?q=">Bing</option>
+                    <option value="https://duckduckgo.com/?q=">DuckDuckGo</option>
+                    <option value="https://www.youtube.com/results?search_query=">YouTube</option>
+                    <option value="https://www.reddit.com/search?q=">Reddit</option>  
+                    <option value="type_beat">type beat</option>  
+                </select>
+                <button type="button" onclick="search()">SRCH</button>
+                <input type="checkbox" id="newPage" name="N_PAGE" checked>
+                <label for="newPage">N PAGE</label><br>            
+            </div>
+        </div>
+    </div>
+    <script src="homepage.js"></script>
+</body>
+</html>
